@@ -12,6 +12,8 @@ if "%command%"=="" (
     python .\manage.py runserver
 ) else if "%command%"=="m" (
     python .\manage.py migrate
+) else if "%command%"=="sa" (
+    python .\manage.py startapp %*
 ) else (
     python .\manage.py %*
 )
